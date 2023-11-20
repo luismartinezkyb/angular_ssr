@@ -1,13 +1,11 @@
-<h1>Hola Mundo {{title}}</h1>
+<h1>Hola Mundo con Angular</h1>
 
+<ul>
+  <li>
+    <a routerLink="/products">Products</a>
+  </li>
+    
+  <li><a routerLink="/contact">Contacto</a></li>
+</ul>
 
-<button (click)="changeTitle()">Change title</button>
-
-
-<div *ngIf="loading; else elseTemplate">
-  <h1>Loading...</h1>
-</div>
-<ng-template #elseTemplate>
-  <app-product [product]="product" *ngFor="let product of products" ></app-product>
-</ng-template>
-
+<router-outlet></router-outlet>

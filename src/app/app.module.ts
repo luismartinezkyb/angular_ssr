@@ -4,12 +4,13 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { NgOptimizedImage } from '@angular/common';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
   ],
   imports: [
     BrowserModule,
